@@ -1,7 +1,7 @@
 {
   "name": "evershop-store",
   "version": "1.0.0",
-  "description": "EverShop e-commerce store",
+  "description": "EverShop e-commerce store — ShipKit template",
   "scripts": {
     "build": "evershop build",
     "start": "evershop start",
