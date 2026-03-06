@@ -1,0 +1,16 @@
+{
+  "name": "evershop-store",
+  "version": "1.0.0",
+  "description": "EverShop e-commerce store",
+  "scripts": {
+    "build": "evershop build",
+    "start": "evershop start",
+    "dev": "evershop dev"
+  },
+  "dependencies": {
+    "@evershop/evershop": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
