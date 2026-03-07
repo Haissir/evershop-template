@@ -26,7 +26,7 @@ ShipKit escribe `config/default.json` con estos valores antes del build.
 El usuario admin se crea automáticamente ~90 segundos después del deploy:
 
 - **Email:** `admin@tienda.com`
-- **Contraseña:** `Admin1234!`
+- **Contraseña:** `Admin1234x`
 - **Panel:** `https://tu-dominio.com/admin`
 
 > Cambia la contraseña inmediatamente desde `Admin > Mi cuenta`.
