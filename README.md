@@ -4,27 +4,30 @@ Tienda e-commerce lista para desplegar desde ShipKit en un clic.
 
 ## Despliegue con ShipKit
 
+Selecciona la plantilla **EverShop** desde la UI de ShipKit. Se configuran automáticamente:
+
 | Campo | Valor |
 |-------|-------|
-| **Repo** | `https://github.com/Haissir/evershop-template` |
 | **Stack** | Node.js |
 | **Build command** | `npm run build` |
-| **Init command** | *(dejar vacío)* |
-| **Base de datos** | PostgreSQL |
+| **Base de datos** | PostgreSQL (creada automáticamente) |
 
-> ShipKit crea la base de datos PostgreSQL automáticamente e inyecta todas las variables de entorno necesarias (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`). Las migraciones corren automáticamente al iniciar la app. No se requiere configuración manual.
+### Opciones configurables en el formulario
+
+| Opción | Valores disponibles |
+|--------|-------------------|
+| **Idioma** | Español (`es`), English (`en`) |
+| **Divisa** | USD, COP, EUR, MXN, ARS |
+
+ShipKit escribe `config/default.json` con estos valores antes del build.
 
 ### Acceso al panel de administración
 
-Después del primer deploy, crea el usuario admin desde SSH en el servidor:
+El usuario admin se crea automáticamente ~90 segundos después del deploy:
 
-```bash
-cd /ruta/de/tu/app
-DB_HOST=127.0.0.1 DB_PORT=5432 DB_NAME=<db> DB_USER=<user> DB_PASSWORD=<pass> \
-  npx evershop user:create --name "Admin" --email "admin@tienda.com" --password "Admin1234!"
-```
-
-Luego accede en `https://tu-dominio.com/admin`.
+- **Email:** `admin@tienda.com`
+- **Contraseña:** `Admin1234!`
+- **Panel:** `https://tu-dominio.com/admin`
 
 > Cambia la contraseña inmediatamente desde `Admin > Mi cuenta`.
 
