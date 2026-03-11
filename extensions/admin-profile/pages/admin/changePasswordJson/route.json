@@ -1,0 +1,6 @@
+{
+  "name": "Admin Change Password",
+  "description": "Change the password of the logged-in admin user",
+  "methods": ["POST"],
+  "path": "/user/change-password"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "currentPassword": { "type": "string" },
+    "newPassword":     { "type": "string", "minLength": 8 }
+  },
+  "required": ["currentPassword", "newPassword"],
+  "additionalProperties": true,
+  "errorMessage": {
+    "properties": {
+      "currentPassword": "La contraseña actual es obligatoria",
+      "newPassword": "La nueva contraseña debe tener al menos 8 caracteres"
+    }
+  }
+}
