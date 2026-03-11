@@ -29,7 +29,7 @@ El usuario admin se crea automáticamente ~90 segundos después del deploy:
 - **Contraseña:** `Admin1234x`
 - **Panel:** `https://tu-dominio.com/admin`
 
-> Cambia la contraseña inmediatamente desde `Admin > Mi cuenta`.
+> Para cambiar la contraseña: ve al proyecto en ShipKit y haz clic en el ícono 🔑 junto al botón de Re-deploy.
 
 ## Desarrollo local
 
