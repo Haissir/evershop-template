@@ -4,5 +4,15 @@
     "language": "en",
     "weightUnit": "kg",
     "timezone": "UTC"
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "admin-profile",
+        "resolve": "extensions/admin-profile",
+        "enabled": true,
+        "priority": 10
+      }
+    ]
   }
 }
