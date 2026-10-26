@@ -1,0 +1,6 @@
+{
+  "name": "admin-profile",
+  "version": "2.0.0",
+  "description": "Página de cambio de contraseña para el administrador (EverShop 2.x)",
+  "type": "module"
+}

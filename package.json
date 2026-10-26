@@ -1,16 +1,22 @@
 {
   "name": "evershop-store",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "EverShop e-commerce store — ShipKit template",
   "scripts": {
-    "build": "evershop build",
+    "build:extensions": "cd extensions/admin-profile && rm -rf dist && swc src -d dist --config-file ../../node_modules/@evershop/evershop/.swcrc --strip-leading-paths --copy-files",
+    "build": "npm run build:extensions && evershop build",
     "start": "evershop start",
     "dev": "evershop dev"
   },
   "dependencies": {
-    "@evershop/evershop": "^1.0.5"
+    "@evershop/evershop": "^2.3.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
+  },
+  "overrides": {
+    "@graphql-tools/utils": "^12.0.1",
+    "@graphql-tools/merge": "^9.2.4",
+    "@graphql-tools/schema": "^10.1.1"
   }
 }

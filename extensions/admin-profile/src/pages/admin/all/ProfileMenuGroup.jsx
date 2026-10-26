@@ -1,7 +1,7 @@
+import { NavigationItemGroup } from '@components/admin/NavigationItemGroup.js';
+import { KeyRound } from 'lucide-react';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Icon from '@heroicons/react/solid/esm/KeyIcon';
-import NavigationItemGroup from '@components/admin/cms/NavigationItemGroup';
 
 export default function ProfileMenuGroup({ changePasswordPage }) {
   return (
@@ -10,7 +10,7 @@ export default function ProfileMenuGroup({ changePasswordPage }) {
       name="Mi perfil"
       items={[
         {
-          Icon,
+          Icon: KeyRound,
           url: changePasswordPage,
           title: 'Cambiar contraseña'
         }
